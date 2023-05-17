@@ -2,6 +2,7 @@
 
 all:
 	$(CC) -Wall -Wextra -pedantic -D_GNU_SOURCE -DRESTRICT_PROCESS_seccomp -nostartfiles -shared -fpic -fPIC \
+		-fvisibility=hidden \
 		-Wconversion -Wshadow \
 		-Wpointer-arith -Wcast-qual \
 		-Wstrict-prototypes -Wmissing-prototypes \
